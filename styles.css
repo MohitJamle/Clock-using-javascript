@@ -4,7 +4,12 @@
 }
 body {
   background-color: aqua;
+  background: url(infinite3.gif);
 }
+li:hover {
+  color: rgb(0, 58, 247);
+}
+
 #clockContainer {
   position: relative;
   top: 2vw;
@@ -66,6 +71,7 @@ body {
 .nav ul li {
   padding: 1%;
 }
+
 .head {
   font-size: 2vw;
 }
@@ -74,4 +80,24 @@ body {
   font-size: 1.1vw;
   font-family: sans-serif;
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .nav {
+    height: 10vw;
+    background-color: rgb(0, 0, 48);
+  }
+  #clockContainer {
+    top: 24vw;
+  }
+  .head {
+    font-size: 7vw;
+  }
+  .home {
+    font-size: 3vw;
+    margin: 3%;
+  }
 }
